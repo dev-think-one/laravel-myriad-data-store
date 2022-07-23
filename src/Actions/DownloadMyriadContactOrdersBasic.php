@@ -87,18 +87,18 @@ class DownloadMyriadContactOrdersBasic
             foreach ($item['Packages'] as $package) {
                 $myriadModel->packages()->create([
                     'order_package_type_id' => (int) ($package['OrderPackageType_ID'] ?? 0),
-                    'title_id'              => (int) ($package['Title_ID'] ?? 0),
-                    'start_issue'           => (string) ($package['StartIssue'] ?? ''),
-                    'end_issue'             => (string) ($package['EndIssue'] ?? ''),
-                    'status'                => (string) ($package['StatusType'] ?? ''),
-                    'stopcode'              => (string) ($package['StopCode'] ?? ''),
+                    'title_id'              => (int) ($package['Title_ID']            ?? 0),
+                    'start_issue'           => (string) ($package['StartIssue']       ?? ''),
+                    'end_issue'             => (string) ($package['EndIssue']         ?? ''),
+                    'status'                => (string) ($package['StatusType']       ?? ''),
+                    'stopcode'              => (string) ($package['StopCode']         ?? ''),
                     'myriad_package_id'     => !empty($package['MyriadPackage_ID']) ? ((int) $package['MyriadPackage_ID']) : null,
                     'remaining_issues'      => (int) ($package['RemainingIssues'] ?? 0),
-                    'copies'                => (int) ($package['Copies'] ?? 0),
+                    'copies'                => (int) ($package['Copies']          ?? 0),
                     'details'               => [
-                        'Amount'           => (string) ($package['Amount'] ?? ''),
+                        'Amount'           => (string) ($package['Amount']           ?? ''),
                         'OrderPackageType' => (string) ($package['OrderPackageType'] ?? ''),
-                        'Title'            => (string) ($package['Title'] ?? ''),
+                        'Title'            => (string) ($package['Title']            ?? ''),
                     ],
                 ]);
             }
