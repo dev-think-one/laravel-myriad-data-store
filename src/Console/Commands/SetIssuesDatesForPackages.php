@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class SetIssuesDatesForPackages extends Command
 {
-
     /**
      * The name and signature of the console command.
      *
