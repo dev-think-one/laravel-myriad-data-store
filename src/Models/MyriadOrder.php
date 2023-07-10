@@ -20,7 +20,7 @@ class MyriadOrder extends Model
         'order_date' => 'date',
     ];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.orders');
     }

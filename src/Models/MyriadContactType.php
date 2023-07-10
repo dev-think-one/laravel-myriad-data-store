@@ -16,7 +16,7 @@ class MyriadContactType extends Model
         'requires_titles' => 'bool',
     ];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.contact_types');
     }

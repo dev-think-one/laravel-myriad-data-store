@@ -18,7 +18,7 @@ class MyriadDespatchType extends Model
 
     protected $guarded = [];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.despatch_types');
     }

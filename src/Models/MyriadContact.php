@@ -21,7 +21,7 @@ class MyriadContact extends Model
         'communications' => \JsonFieldCast\Casts\SimpleJsonField::class,
     ];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.contacts');
     }

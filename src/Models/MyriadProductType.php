@@ -11,7 +11,7 @@ class MyriadProductType extends Model
 
     protected $guarded = [];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.product_types');
     }

@@ -15,7 +15,7 @@ class MyriadIssue extends Model
         'publication_date' => 'date',
     ];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.issues');
     }

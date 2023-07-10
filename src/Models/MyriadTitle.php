@@ -16,7 +16,7 @@ class MyriadTitle extends Model
         'active' => 'bool',
     ];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.titles');
     }

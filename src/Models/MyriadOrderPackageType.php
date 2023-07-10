@@ -11,7 +11,7 @@ class MyriadOrderPackageType extends Model
 
     protected $guarded = [];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.order_package_types');
     }

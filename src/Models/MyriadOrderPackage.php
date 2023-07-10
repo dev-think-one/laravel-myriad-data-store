@@ -16,7 +16,7 @@ class MyriadOrderPackage extends Model
         'details' => \JsonFieldCast\Casts\SimpleJsonField::class,
     ];
 
-    public function getTable()
+    public function getTable(): string
     {
         return config('myriad-data-store.tables.order_packages');
     }
