@@ -1,11 +1,11 @@
 # Myriad data downloader.
 
-[![Packagist License](https://img.shields.io/packagist/l/yaroslawww/laravel-myriad-data-store?color=%234dc71f)](https://github.com/yaroslawww/laravel-myriad-data-store/blob/main/LICENSE.md)
-[![Packagist Version](https://img.shields.io/packagist/v/yaroslawww/laravel-myriad-data-store)](https://packagist.org/packages/yaroslawww/laravel-myriad-data-store)
-[![Total Downloads](https://img.shields.io/packagist/dt/yaroslawww/laravel-myriad-data-store)](https://packagist.org/packages/yaroslawww/laravel-myriad-data-store)
-[![Build Status](https://scrutinizer-ci.com/g/yaroslawww/laravel-myriad-data-store/badges/build.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-myriad-data-store/build-status/main)
-[![Code Coverage](https://scrutinizer-ci.com/g/yaroslawww/laravel-myriad-data-store/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-myriad-data-store/?branch=main)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yaroslawww/laravel-myriad-data-store/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-myriad-data-store/?branch=main)
+![Packagist License](https://img.shields.io/packagist/l/think.studio/laravel-myriad-data-store?color=%234dc71f)
+[![Packagist Version](https://img.shields.io/packagist/v/think.studio/laravel-myriad-data-store)](https://packagist.org/packages/think.studio/laravel-myriad-data-store)
+[![Total Downloads](https://img.shields.io/packagist/dt/think.studio/laravel-myriad-data-store)](https://packagist.org/packages/think.studio/laravel-myriad-data-store)
+[![Build Status](https://scrutinizer-ci.com/g/dev-think-one/laravel-myriad-data-store/badges/build.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-myriad-data-store/build-status/main)
+[![Code Coverage](https://scrutinizer-ci.com/g/dev-think-one/laravel-myriad-data-store/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-myriad-data-store/?branch=main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dev-think-one/laravel-myriad-data-store/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-myriad-data-store/?branch=main)
 
 Download specific myriad app data to your internal database.
 
@@ -14,7 +14,7 @@ Download specific myriad app data to your internal database.
 Install the package via composer:
 
 ```shell
-composer require yaroslawww/laravel-myriad-data-store
+composer require think.studio/laravel-myriad-data-store
 ```
 
 Optionally you can publish the config file with:
@@ -23,7 +23,7 @@ Optionally you can publish the config file with:
 php artisan vendor:publish --provider="MyriadDataStore\ServiceProvider" --tag="config"
 ```
 
-This package works on top of [`yaroslawww/laravel-myriad-soap`](https://packagist.org/packages/yaroslawww/laravel-myriad-soap) - please follow this configuration.
+This package works on top of [`think.studio/laravel-myriad-soap`](https://packagist.org/packages/dev-think-one/laravel-myriad-soap) - please follow this configuration.
 
 ## Usage
 
