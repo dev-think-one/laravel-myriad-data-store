@@ -19,7 +19,7 @@
         "php": "^8.1",
         "illuminate/support": "^9.0|^10.0",
         "think.studio/laravel-json-field-cast": "^2.1",
-        "yaroslawww/laravel-myriad-soap": "^1.3"
+        "think.studio/laravel-myriad-soap": "^1.3"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.20",
